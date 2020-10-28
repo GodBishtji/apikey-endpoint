@@ -3,7 +3,7 @@ info:
   title: Cloud Endpoints with API Keys
   description: Sample API on Cloud Endpoints with a Cloud Run, Cloud Function and App Engine with IAP backend
   version: 1.0.0
-host: endpoint-<hash>-uc.a.run.app
+host: endpoint-steqbzhvpa-uc.a.run.app
 schemes:
   - https
 produces:
@@ -14,7 +14,7 @@ paths:
       summary: Greet a user from Cloud Run
       operationId: hello_cloud_run
       x-google-backend:
-        address: https://apikey-endpoint-<hash>-uc.a.run.app
+        address: https://apikey-endpoint-steqbzhvpa-uc.a.run.app
         path_translation: APPEND_PATH_TO_ADDRESS
       security:
         - api_key: []
@@ -52,7 +52,7 @@ paths:
       operationId: hello_gae
       x-google-backend:
         address: https://dsights-api-security.appspot.com/hello
-        jwt_audience: <PROJECT_NUMBER>-<hash>.apps.googleusercontent.com
+        jwt_audience: <PROJECT_NUMBER>-steqbzhvpa.apps.googleusercontent.com
       security:
         - api_key: []
       parameters:
